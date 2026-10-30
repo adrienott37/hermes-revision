@@ -308,3 +308,41 @@ select.filters {
   flex-wrap: wrap;
 }
 .card-actions .btn { flex: 1; }
+
+/* ---- v2 : login, K-prime, modules ---- */
+.login-box {
+  max-width: 420px; margin: 40px auto; background: var(--card);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 32px 28px; text-align: center;
+}
+.login-logo { font-size: 3rem; }
+.login-box h2 { margin-top: 18px; text-align: left; }
+.login-box label { display: block; text-align: left; margin: 14px 0 4px; font-weight: 600; font-size: .9rem; }
+.login-box input {
+  width: 100%; padding: 10px 12px; border: 1.5px solid var(--border);
+  border-radius: 8px; font-size: 1rem;
+}
+.login-error { color: var(--danger); font-size: .85rem; min-height: 20px; margin-top: 8px; }
+.login-switch { margin-top: 16px; font-size: .9rem; }
+.login-switch a { color: var(--primary); font-weight: 600; }
+.login-note { margin-top: 20px; font-size: .78rem; color: var(--muted); }
+.user-bar {
+  display: flex; justify-content: flex-end; align-items: center; gap: 12px;
+  margin-bottom: 10px; font-size: .9rem; color: var(--muted);
+}
+.badge.muted { background: #eceef1; color: var(--muted); }
+.k-option { align-items: center; }
+.k-option .opt-text { flex: 1; }
+.k-btns { display: flex; gap: 6px; }
+.k-btn {
+  min-width: 40px; padding: 6px 10px; border: 1.5px solid var(--border);
+  border-radius: 8px; background: #fff; font-size: 1rem; font-weight: 700;
+  cursor: pointer;
+}
+.k-btn:hover { border-color: var(--primary); }
+.k-btn.selected { background: var(--primary); color: #fff; border-color: var(--primary); }
+.k-btn.locked { cursor: default; opacity: .85; }
+.k-hint { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); font-size: .85rem; color: var(--muted); }
+.feedback .source a { color: var(--primary-dark); font-weight: 600; }
+.fiche-section a { color: var(--primary); }
+.refs a { color: var(--primary); }
